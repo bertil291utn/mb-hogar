@@ -1,1 +1,14 @@
-<p>categorias works!</p>
+<div class="body-home">
+    <mat-grid-list cols="3" rowHeight="350px">
+      <mat-grid-tile *ngFor="let tile of tiles;let i = index" [colspan]="tile.cols" [rowspan]="tile.rows"
+        [style.background]="tile.color">
+        <div style="text-align: center;">
+          <span [style.color]="tile.id==3?'white':''">
+            <p>{{tile.text.description}}</p>
+            <h2>{{tile.text.titulo}}</h2>
+          </span>
+          <img width="300" [src]="tile.text.img" />
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>

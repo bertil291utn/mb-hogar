@@ -11,6 +11,8 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import { OfertasComponent } from './ofertas/ofertas.component';
 import { FooterComponent } from './footer/footer.component';
 import { SubtoolbarComponent } from './subtoolbar/subtoolbar.component';
+import { AngularMaterialModule } from './angular-material.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SubtoolbarComponent } from './subtoolbar/subtoolbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AngularMaterialModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

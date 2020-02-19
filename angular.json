@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              
               "src/styles.css",
               "src/tailwind/tailwind.css"
             ],
@@ -121,6 +122,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "mh-hogar"
 }
