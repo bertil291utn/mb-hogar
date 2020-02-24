@@ -1,10 +1,10 @@
-# Muebleria hoar front End
+# Muebler&iacute;a Hogar Web Page Front End
 
-> Proyecto para mostrar todos los productos de la empresa. 
+> Web Page resposive para mostrar todos los productos de la empresa. 
 
 <!-- ![screenshot](assets/project-screenshot.png) -->
 
-Se mostraran todos los productos d ela empresa posteriormente se anadira pasarela de pago, para compras online
+Se mostrar&aacute;n todos los productos de la empresa posteriormente se a&ntilde;adira pasarela de pago para compras online
 
 ## Built With
 
