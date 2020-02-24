@@ -16,6 +16,7 @@ Se mostrar&aacute;n todos los productos de la empresa posteriormente se a&ntilde
 ## Live demo
 
 <!-- <a href="https://quizzical-gates-ccc83e.netlify.com" target="_blank">Check it out</a>💻 -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/db0e189a-c025-4b58-9dcc-28d1ea623c8e/deploy-status)](https://app.netlify.com/sites/trusting-carson-64e553/deploys)
 
 ## Getting Started
 
