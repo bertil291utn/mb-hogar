@@ -1,27 +1,35 @@
-# MhHogar
+# Muebleria hoar front End
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
+> Proyecto para mostrar todos los productos de la empresa. 
 
-## Development server
+<!-- ![screenshot](assets/project-screenshot.png) -->
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Se mostraran todos los productos d ela empresa posteriormente se anadira pasarela de pago, para compras online
 
-## Code scaffolding
+## Built With
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 8
+- Tailwind CSS
+- Angular Material
+- Owl carousel.js
 
-## Build
+## Live demo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<!-- <a href="https://quizzical-gates-ccc83e.netlify.com" target="_blank">Check it out</a>💻 -->
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Clone the repository then 
+```
+npm i
+ng serve
+```
 
-## Running end-to-end tests
+## Authors
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+👤 **Bertil Tandayamo**
 
-## Further help
+- Github: [@bertil291utn](https://github.com/bertil291utn)
+- Twitter: [@btandayamo](https://twitter.com/batandayamo)
+- Linkedin: [Bertil Tandayamo](http://bit.ly/bertil_linkedin)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
