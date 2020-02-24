@@ -13,6 +13,9 @@ import { FooterComponent } from './footer/footer.component';
 import { SubtoolbarComponent } from './subtoolbar/subtoolbar.component';
 import { AngularMaterialModule } from './angular-material.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     FontAwesomeModule,
     AngularMaterialModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatCarouselModule.forRoot(),
+    MDBBootstrapModule.forRoot(),
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,29 @@
-<p>ofertas works!</p>
+<div class="py-8 px-4 text-center">
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let item of list">
+            <mat-card class="example-card">
+                <div style="background-color: #F8F9FA; padding:16px;">
+                    <img mat-card-image class="main-image" style="margin-top: 0;"
+                        src="http://www.emporium.themeseason.com/assets/images/products/printer/1-medium.png"
+                        alt="Photo of a Shiba Inu">
+                    <mat-chip-list>
+                        <mat-chip color="light">Oferta del mes</mat-chip>
+                    </mat-chip-list>
+                </div>
+                <mat-card-content>
+                    <div class="precio-oferta p-4">
+                        <p id="precio-original">
+                            $ 99.99
+                        </p>
+                        <p id="precio-tachado">
+                            $ 150.99
+                        </p>
+                        <p class="text-base lg:text-sm text-primary font-semibold mt-2 tracking-wider">
+                            IMPRESORA CAMEO
+                        </p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </ng-template>
+    </owl-carousel-o>
+</div>

@@ -15,10 +15,21 @@ export interface Tile {
   styleUrls: ['./categorias.component.css']
 })
 export class CategoriasComponent implements OnInit {
-
+  breakpoint: number;
+  cols1: number = 1;
   constructor() { }
 
   ngOnInit() {
+    this.breakpoint = (window.innerWidth <= 800) ? 2 : 3;
+  }
+
+  onResize(event) {
+    //when resize de window this function triggers (window:resize)="function()"
+    this.breakpoint = (event.target.innerWidth <= 800) ? 2 : 3;//takes number 2 of cols from grid in the other hand is always 3
+    if (event.target.innerWidth <= 800) //if the windows takes les than 800px the first title (electrodomesticos) should have 2 cols
+      this.tiles[0].cols = 2;
+    else
+      this.tiles[0].cols = 1;
   }
 
   tiles: Tile[] = [
