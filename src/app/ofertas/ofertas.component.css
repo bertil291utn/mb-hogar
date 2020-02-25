@@ -3,6 +3,7 @@
 }
 
 
+
 .mat-chip {
   max-width: 200px;
   background-color: #00ff01;
@@ -18,7 +19,7 @@
 }
 
 .example-card {
-  width: 250px;
+  width: 200px;
   margin: 1%;
 }
 
