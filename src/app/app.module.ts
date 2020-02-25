@@ -10,12 +10,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { OfertasComponent } from './ofertas/ofertas.component';
 import { FooterComponent } from './footer/footer.component';
-import { SubtoolbarComponent } from './subtoolbar/subtoolbar.component';
 import { AngularMaterialModule } from './angular-material.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MainHomeComponent } from './main-home/main-home.component';
+import { CategoriaToolbarComponent } from './categoria-toolbar/categoria-toolbar.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     CategoriasComponent,
     OfertasComponent,
     FooterComponent,
-    SubtoolbarComponent
+    MainHomeComponent,
+    CategoriaToolbarComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

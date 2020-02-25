@@ -1,9 +1,0 @@
-.toolbars {
-    /* background-color: #333; */
-    position: fixed;
-    top: -50px;
-    width: 100%;
-    display: block;
-    transition: top 0.3s;
-  }
-  

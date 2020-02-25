@@ -3,7 +3,7 @@
         display: block;
     }
 
-    #categorias-navbar:checked+#categorias-menu { 
+    #categorias-navbar:checked+#categorias-menu {
         display: block;
     }
 </style>
@@ -13,7 +13,7 @@
     <div class="navbar">
         <header class="lg:px-16 px-6 bg-primary flex flex-wrap items-center lg:py-0 py-2">
             <div class="flex-1 flex justify-between items-center">
-                <a href="#" class="flex">
+                <a href="/home" class="flex">
                     <img src="../../assets/img/logo.png" class="w-8 h-8 my-auto">
                     <img src="../../assets/img/l-letras.png" class="h-6 my-auto">
                 </a>
@@ -30,7 +30,7 @@
                 <nav>
                     <ul class="lg:flex items-center justify-between text-white pt-4 lg:pt-0 ">
                         <li><a class="lg:p-4 py-1 px-0 block border-b-2 border-transparent hover:border-secondary"
-                                href="#">Home</a></li>
+                                href="/home">Home</a></li>
                         <li><a class="lg:p-4 py-1 px-0 block border-b-2 border-transparent hover:border-secondary"
                                 href="#">Empresa</a></li>
                         <li><a class="lg:p-4 py-1 px-0 block border-b-2 border-transparent hover:border-secondary"
@@ -45,9 +45,9 @@
             <!-- <div (click)="arrowvalue()" class="flex"> -->
             <label for="categorias-navbar" class="pointer-cursor lg:hidden block flex w-full" (click)="arrowvalue()">
                 <h3 class="text-primary font-bold lg:hidden pr-8 tracking-wider">Categor&iacute;as</h3>
-                <fa-icon  *ngIf="arrowDown" class="text-primary " [icon]="faChevronDown">
+                <fa-icon *ngIf="arrowDown" class="text-primary " [icon]="faChevronDown">
                 </fa-icon>
-                <fa-icon  *ngIf="arrowUp" class="text-primary" [icon]="faChevronUp">
+                <fa-icon *ngIf="arrowUp" class="text-primary" [icon]="faChevronUp">
                 </fa-icon>
             </label>
             <input class="hidden" type="checkbox" id="categorias-navbar" />
@@ -56,7 +56,7 @@
                 <nav>
                     <ul class="lg:flex items-center justify-between text-sm text-primary pt-4 lg:pt-0">
                         <li><a class="lg:p-2 py-1 px-0 block border-b-2 border-transparent hover:border-primary"
-                                href="#">Electrodom&eacute;sticos</a></li>
+                                [routerLink]="['/categoria']">Electrodom&eacute;sticos</a></li>
                         <li><a class="lg:p-2 py-1 px-0 block border-b-2 border-transparent hover:border-primary"
                                 href="#">Tecnolog&iacute;a</a></li>
                         <li><a class="lg:p-2 py-1 px-0 block border-b-2 border-transparent hover:border-primary"
@@ -73,4 +73,5 @@
             <!-- </div> -->
         </header>
     </div>
+    <div class="invisible-top" style="height: 5.6rem;"></div>    <!-- div invisible para dar tamano de top al toolbar fixed --> 
 </div>
