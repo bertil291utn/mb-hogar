@@ -13,7 +13,7 @@
     <div class="navbar">
         <header class="lg:px-16 px-6 bg-primary flex flex-wrap items-center lg:py-0 py-2">
             <div class="flex-1 flex justify-between items-center">
-                <a href="/home" class="flex">
+                <a [routerLink]="['/home']" class="flex">
                     <img src="../../assets/img/logo.png" class="w-8 h-8 my-auto">
                     <img src="../../assets/img/l-letras.png" class="h-6 my-auto">
                 </a>
@@ -30,7 +30,7 @@
                 <nav>
                     <ul class="lg:flex items-center justify-between text-white pt-4 lg:pt-0 ">
                         <li><a class="lg:p-4 py-1 px-0 block border-b-2 border-transparent hover:border-secondary"
-                                href="/home">Home</a></li>
+                                [routerLink]="['/home']" >Home</a></li>
                         <li><a class="lg:p-4 py-1 px-0 block border-b-2 border-transparent hover:border-secondary"
                                 href="#">Empresa</a></li>
                         <li><a class="lg:p-4 py-1 px-0 block border-b-2 border-transparent hover:border-secondary"
@@ -56,17 +56,17 @@
                 <nav>
                     <ul class="lg:flex items-center justify-between text-sm text-primary pt-4 lg:pt-0">
                         <li><a class="lg:p-2 py-1 px-0 block border-b-2 border-transparent hover:border-primary"
-                                [routerLink]="['/categoria']">Electrodom&eacute;sticos</a></li>
+                                [routerLink]="['/c','electrodomesticos']">Electrodom&eacute;sticos</a></li>
                         <li><a class="lg:p-2 py-1 px-0 block border-b-2 border-transparent hover:border-primary"
-                                href="#">Tecnolog&iacute;a</a></li>
+                            [routerLink]="['/c','tecnologia']">Tecnolog&iacute;a</a></li>
                         <li><a class="lg:p-2 py-1 px-0 block border-b-2 border-transparent hover:border-primary"
-                                href="#">Electromenores</a></li>
+                            [routerLink]="['/c','electromenores']">Electromenores</a></li>
                         <li><a class="lg:p-2 py-1 px-0 block border-b-2 border-transparent hover:border-primary lg:mb-0 mb-2"
-                                href="#">Hogar</a></li>
+                            [routerLink]="['/c','hogar']">Hogar</a></li>
                         <li><a class="lg:p-2 py-1 px-0 block border-b-2 border-transparent hover:border-primary lg:mb-0 mb-2"
-                                href="#">Motocicletas</a></li>
+                            [routerLink]="['/c','motocicletas']">Motocicletas</a></li>
                         <li><a class="lg:p-2 py-1 px-0 block border-b-2 border-transparent hover:border-primary lg:mb-0 mb-2"
-                                href="#">Ferreter&iacute;a</a></li>
+                            [routerLink]="['/c','ferreteria']">Ferreter&iacute;a</a></li>
                     </ul>
                 </nav>
             </div>

@@ -7,17 +7,18 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 const routes: Routes = [
   {
+    path: '',
+    component: MainHomeComponent
+  },
+  {
+    path: 'home',
+    component: MainHomeComponent
+  },
+  {
     path: '', children: [
+
       {
-        path: '',
-        component: MainHomeComponent
-      },
-      {
-        path: 'home',
-        component: MainHomeComponent
-      },
-      {
-        path: 'categoria',
+        path: 'c/:id',
         component: CategoriaToolbarComponent
       },
     ]

@@ -1,1 +1,28 @@
-<p>categoria-toolbar works!</p>
+<div class="body">
+  <div class="main">
+    <p class="mx-5 text-primary text-xs">{{categoria}}  > Other</p>
+    <!-- <div class="col">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"
+*ngFor="let item of breadcrumbList; let i = index"
+[class.active]="i===breadcrumbList.length-1">
+<a [routerLink]="item.path" *ngIf="i!==breadcrumbList.length-1">
+{{ item.name }}
+</a>
+<span *ngIf="i===breadcrumbList.length-1">{{ item.name }}</span>
+</li>
+</ol>
+</div> breadcrum -->
+    <div class="scrollmenu lg:hidden">
+      <!-- treaer las subcategorias de acuerdo a cada categoria seleccionada -->
+      <a href="#home">Cocina a gas</a>
+      <a href="#news">Refrigeracion</a>
+      <a href="#contact">Lavado y secado</a>
+      <a href="#about">Hornos empotrados</a>
+      <a href="#about">Marca</a>
+      <a href="#about">About</a>
+     
+
+    </div>
+  </div>
+</div>
