@@ -19,3 +19,35 @@ div.scrollmenu a {
 div.scrollmenu a:hover {
   background-color: #777;
 }
+
+
+
+
+.main-image {
+  margin: 10px auto;
+  width: 100%;
+}
+
+.mat-chip {
+  max-width: 200px;
+  background-color: #00ff01;
+  color: #084b90;
+}
+.precio-oferta #precio-original {
+  font-size: 1rem;
+}
+.precio-oferta #precio-tachado {
+  font-size: 0.8rem;
+  color: #084b90;
+  text-decoration: line-through;
+}
+
+.example-card {
+  width: 200px;
+  margin: 1%;
+}
+
+.mat-card {
+  padding: 0px;
+}
+

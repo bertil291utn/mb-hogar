@@ -1,6 +1,6 @@
 <div class="body">
   <div class="main">
-    <p class="mx-5 text-primary text-xs">{{categoria}}  > Other</p>
+    <p class="mx-5 text-primary text-xs">{{categoria}} > Other</p>
     <!-- <div class="col">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"
@@ -21,8 +21,37 @@
       <a href="#about">Hornos empotrados</a>
       <a href="#about">Marca</a>
       <a href="#about">About</a>
-     
+    </div>
+
+
+    <div class="flex flex-wrap items-center justify-center">
+      <!-- items-center justify-center CENTER FLEX
+         align-items: center; justify-content: center; -->
+      <mat-card class="example-card m-1" *ngFor="let card of obs | async">
+        <div style="background-color: #F8F9FA; padding:16px;">
+          <img mat-card-image class="main-image" style="margin-top: 0;"
+              src="http://www.emporium.themeseason.com/assets/images/products/printer/1-medium.png"
+              alt="Photo of a Shiba Inu">
+          <mat-chip-list>
+              <mat-chip color="light">Oferta del mes</mat-chip>
+          </mat-chip-list>
+      </div>
+      <mat-card-content>
+          <div class="precio-oferta p-4">
+              <p id="precio-original">
+                  $ 99.99
+              </p>
+              <p id="precio-tachado">
+                  $ 150.99
+              </p>
+              <p class="text-base lg:text-sm text-primary font-semibold mt-2 tracking-wider">
+                  {{card.title}}
+              </p>
+          </div>
+      </mat-card-content>
+      </mat-card>
 
     </div>
+    <mat-paginator class="bg-background" [pageSizeOptions]="[5]"></mat-paginator>
   </div>
 </div>
