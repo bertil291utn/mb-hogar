@@ -81,13 +81,14 @@ const DATA: Card[] = [
   styleUrls: ['./categoria-toolbar.component.css']
 })
 export class CategoriaToolbarComponent implements OnInit, OnDestroy {
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   obs: Observable<any>;
   dataSource: MatTableDataSource<Card> = new MatTableDataSource<Card>(DATA);
   name: string;
   menu: Array<any> = [];
   breadcrumbList: Array<any> = [];
   categoria;
+  subcat = '';
 
 
   constructor(private route: ActivatedRoute, private _router: Router, private changeDetectorRef: ChangeDetectorRef
@@ -97,7 +98,7 @@ export class CategoriaToolbarComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.route.params.subscribe(params => this.categoria = this.getCategoria(params.id));//getting the categoria passing argument as string
-    
+
     /*paginator*/
     this.changeDetectorRef.detectChanges();
     this.dataSource.paginator = this.paginator;
@@ -113,6 +114,14 @@ export class CategoriaToolbarComponent implements OnInit, OnDestroy {
     }
     /*paginator*/
   }
+
+  categoriaAction(categoria) {
+    //mandar a buscar en bd la categoria y devolver el string el nombre y poner en subcategoria
+    this.subcat = categoria;
+    console.log('traer todas las categorias de ', categoria, ' y volver a pintar');
+
+  }
+
 
   getCategoria(id) {
     switch (id) {

@@ -622,6 +622,21 @@ video {
   }
 }
 
+/*items left side container categorias*/
+
+.title-items-cat{
+  font-size: 0.875rem;
+  color: #084b90;
+  font-weight: 500;
+}
+
+.subtitle-items-cat {
+  font-size: 0.75rem;
+  color: #a0aec0;
+}
+
+/*items left side container categorias*/
+
 .sr-only {
   position: absolute;
   width: 1px;

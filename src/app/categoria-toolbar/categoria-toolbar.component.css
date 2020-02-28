@@ -2,6 +2,7 @@
   padding: 5% 0;
 }
 
+/*scroll menu*/
 div.scrollmenu {
   background-color: #f7fafc;
   overflow: auto;
@@ -17,12 +18,14 @@ div.scrollmenu a {
 }
 
 div.scrollmenu a:hover {
-  background-color: #777;
+  background-color: #084b90;
+  color:white;
 }
+/*scroll menu*/
 
 
 
-
+/*productos*/
 .main-image {
   margin: 10px auto;
   width: 100%;
@@ -51,3 +54,4 @@ div.scrollmenu a:hover {
   padding: 0px;
 }
 
+/*productos*/

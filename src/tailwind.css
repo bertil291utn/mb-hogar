@@ -2,4 +2,15 @@
 
 @tailwind components;
 
+/*items left side container categorias*/
+
+.title-items-cat{
+    @apply text-sm text-primary font-medium;
+}
+
+.subtitle-items-cat {
+    @apply text-xs text-gray-500;
+}
+/*items left side container categorias*/
+
 @tailwind utilities;
