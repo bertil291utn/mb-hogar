@@ -1,5 +1,5 @@
 <div class="py-5 bg-background">
-  <p class="mx-16 mt-5 text-primary text-xs">{{categoria}} > {{subcat}}</p>
+  <p class="mx-16 mt-5 text-primary text-xs">{{categoria_1}}{{subcatString}}</p>
   <!-- <div class="col">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"
@@ -12,15 +12,29 @@
 </li>
 </ol>
 </div> breadcrum -->
-  <div class="scrollmenu py-5 lg:hidden">
+
+
+  <div class="pt-5 lg:hidden">
     <!-- treaer las subcategorias de acuerdo a cada categoria seleccionada -->
-    <a [routerLink]="" (click)="categoriaAction('cg-1')">Cocina a gas</a>
-    <a href="#news">Refrigeracion</a>
-    <a href="#contact">Lavado y secado</a>
-    <a href="#about">Hornos empotrados</a>
-    <a href="#about">Marca</a>
-    <a href="#about">About</a>
+    <div class="scrollmenu">
+      <a (click)="viewAllSubcat()">Cocina a gas</a>
+      <a>Refrigeracion</a>
+      <a>Lavado y secado</a>
+      <a>Hornos empotrados</a>
+      <a>Marca</a>
+      <a>About</a>
+    </div>
+
+    <!-- subacategoria for phones devices  -->
+    <div class="subcat hidden bg-primary">
+      <ul class="subcat-content p-5 text-white text-sm flex flex-wrap">
+        <li class="pr-3" (click)="categoriaAction('cg-1','cg-1a')">Cocina a gas</li>
+        <li class="pr-3">Refrigeradoras</li>
+      </ul>
+    </div>
+
   </div>
+
 
   <div class="main-grid lg:flex lg:my-10">
     <div class="hidden lg:block left-side lg:w-1/5">
@@ -35,7 +49,7 @@
           <p class="title-items-cat">Cocina a gas</p>
           <ul>
             <li>
-              <a [routerLink]="" (click)="categoriaAction('cg-1')" class="subtitle-items-cat"> - Cocina a gas</a>
+              <a [routerLink]="" (click)="categoriaAction('cg-1','cg-1a')" class="subtitle-items-cat"> - Cocina a gas</a>
             </li>
           </ul>
         </div>

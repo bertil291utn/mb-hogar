@@ -87,8 +87,8 @@ export class CategoriaToolbarComponent implements OnInit, OnDestroy {
   name: string;
   menu: Array<any> = [];
   breadcrumbList: Array<any> = [];
-  categoria;
-  subcat = '';
+  categoria_1;//Electrodomesticos
+  subcatString = ''; // refrigeradoras
 
 
   constructor(private route: ActivatedRoute, private _router: Router, private changeDetectorRef: ChangeDetectorRef
@@ -97,7 +97,7 @@ export class CategoriaToolbarComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.route.params.subscribe(params => this.categoria = this.getCategoria(params.id));//getting the categoria passing argument as string
+    this.mainCategoria();
 
     /*paginator*/
     this.changeDetectorRef.detectChanges();
@@ -107,6 +107,15 @@ export class CategoriaToolbarComponent implements OnInit, OnDestroy {
   }
 
 
+  private mainCategoria() {
+    this.route.params.subscribe(params => {
+      this.categoria_1 = this.getCategoria(params.id)
+      console.log('traer todo los productos de esta categoria');
+      this.subcatString='';
+      //REFERENCIA RFUNCION AQUI this.traernuevosdatos()
+    });//getting the categoria passing argument as string
+  }
+
   ngOnDestroy() {
     /*paginator*/
     if (this.dataSource) {
@@ -115,12 +124,24 @@ export class CategoriaToolbarComponent implements OnInit, OnDestroy {
     /*paginator*/
   }
 
-  categoriaAction(categoria) {
+  categoriaAction(cat_2, cat_3) {
+    //args catgoria string and cellphone boolean if it's cellphone or not
     //mandar a buscar en bd la categoria y devolver el string el nombre y poner en subcategoria
-    this.subcat = categoria;
-    console.log('traer todas las categorias de ', categoria, ' y volver a pintar');
-
+    this.subcatString = ' > ' + cat_2 + ' > ' + cat_3;
+    console.log('traer todas las categorias de ', cat_3, ' y volver a pintar');
+    // if (cellphone)
+    //   this.viewAllSubcat();
   }
+
+  viewAllSubcat() {
+    var subcat = document.getElementsByClassName("subcat")[0];//get element by class name the first element in the claa name [0]
+    if (window.getComputedStyle(subcat).display === "none") //check if the subcat has none display
+      subcat['style'].display = 'block';//show the subcategorias  div
+    else
+      subcat['style'].display = 'none';//hide the div 
+
+
+  }//end viesallsubcat
 
 
   getCategoria(id) {
