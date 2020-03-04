@@ -1,0 +1,80 @@
+@import '../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-primary: (
+    50 : #e1e9f2,
+    100 : #b5c9de,
+    200 : #84a5c8,
+    300 : #5281b1,
+    400 : #2d66a1,
+    500 : #084b90,
+    600 : #074488,
+    700 : #063b7d,
+    800 : #043373,
+    900 : #022361,
+    A100 : #91afff,
+    A200 : #5e8aff,
+    A400 : #2b65ff,
+    A700 : #1252ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$md-secondary: (
+    50 : #e0ffe1,
+    100 : #b3ffb3,
+    200 : #80ff80,
+    300 : #4dff4d,
+    400 : #26ff27,
+    500 : #00ff01,
+    600 : #00ff01,
+    700 : #00ff01,
+    800 : #00ff01,
+    900 : #00ff00,
+    A100 : #ffffff,
+    A200 : #f2fff2,
+    A400 : #bfffbf,
+    A700 : #a6ffa6,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+//the first two are the custom palettes we declared above
+$my-theme-primary: mat-palette($md-primary);
+$my-theme-secondary: mat-palette($md-secondary);
+//the third, for the warn color, is the predefined material red palette
+$my-theme-warn: mat-palette($mat-red);
+
+$my-theme: mat-light-theme($my-theme-primary, $my-theme-secondary, $my-theme-warn);
+
+@include angular-material-theme($my-theme);

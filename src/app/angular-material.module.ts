@@ -10,7 +10,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {
-  MatNativeDateModule, MatToolbarModule, MatButtonModule,MatCardModule,MatSidenavModule,MatGridListModule,MatChipsModule,MatPaginatorModule
+  MatNativeDateModule, MatToolbarModule, MatButtonModule,MatCardModule,MatSidenavModule,MatGridListModule,MatChipsModule,MatPaginatorModule,MatTabsModule
 
 } from '@angular/material';
 
@@ -33,7 +33,8 @@ const modules: any[] = [
   MatSidenavModule,
   MatGridListModule,
   MatChipsModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatTabsModule
 
 
 ];

@@ -6,7 +6,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ofertas.component.css']
 })
 export class OfertasComponent implements OnInit {
-  list = [0, 1, 2, 3,4,5,6];
+  list = [
+    {
+      id: 1,
+      codigo: 'p-01-refrigeradora',
+      producto: 'Refrigeradora'
+    },
+    {
+      id: 2,
+      codigo: 'p-02-congelador',
+      producto: 'Congelador'
+    },
+    {
+      id: 3,
+      codigo: 'p-03-celular',
+      producto: 'Celular'
+    },
+    {
+      id: 4,
+      codigo: 'p-04-impresora',
+      producto: 'Impresora'
+    },
+    {
+      id: 5,
+      codigo: 'p-05-motocicleta',
+      producto: 'Motocicleta'
+    }
+  ];
   constructor() { }
 
   ngOnInit() {

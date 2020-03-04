@@ -18,6 +18,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { CategoriaToolbarComponent } from './categoria-toolbar/categoria-toolbar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductosComponent } from './productos/productos.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FooterComponent,
     MainHomeComponent,
     CategoriaToolbarComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,

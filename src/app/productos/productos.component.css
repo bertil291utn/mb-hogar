@@ -1,0 +1,42 @@
+.body {
+  padding: 5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-old-one);
+}
+
+.precio-content {
+  width: 25%;
+}
+
+.cuotas {
+  right: 80%;
+  bottom: 10%;
+}
+
+/* tabla ficha tecnica*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #E2E8F0;
+}
+
+.titulo-table{
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
+}
+.content-table{}
+/* tabla ficha tecnica*/

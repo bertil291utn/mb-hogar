@@ -1,7 +1,7 @@
 <div class="py-8 px-4 text-center">
     <owl-carousel-o [options]="customOptions">
         <ng-template carouselSlide *ngFor="let item of list">
-            <mat-card class="example-card">
+            <mat-card [routerLink]="['/p',item.codigo]" class="example-card">
                 <div style="background-color: #F8F9FA; padding:16px;">
                     <img mat-card-image class="main-image" style="margin-top: 0;"
                         src="http://www.emporium.themeseason.com/assets/images/products/printer/1-medium.png"
@@ -19,7 +19,7 @@
                             $ 150.99
                         </p>
                         <p class="text-base lg:text-sm text-primary font-semibold mt-2 tracking-wider">
-                            IMPRESORA CAMEO
+                            {{item.producto}}
                         </p>
                     </div>
                 </mat-card-content>

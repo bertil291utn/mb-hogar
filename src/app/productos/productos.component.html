@@ -1,0 +1,102 @@
+<div class="body">
+    <!-- <p>productos works! {{producto}}</p> -->
+    <div class="header">
+        <h3 class="titulo-header text-xl font-medium">Refrigeradora Mabe 400 Litros<br>
+            Color Inox | Tecnología Home Energy Saver</h3>
+        <div class="carrousel-header mt-10 mx-auto">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide>
+                    <mat-card>
+                        <mat-card-content>
+                            <img src="assets/img/main.png" alt="prod-1">
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <mat-card>
+                        <mat-card-content>
+                            <img src="assets/img/r-1.png" alt="prod-2">
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <mat-card>
+                        <mat-card-content>
+                            <img src="assets/img/r-2.png" alt="prod-3">
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+            </owl-carousel-o>
+        </div> <!-- carrousel productos -->
+
+        <div class="precio-header mt-8">
+            <div class="precio-content flex justify-center items-center  mx-auto">
+                <div class="precio bg-gray-300  py-2 px-16 relative">
+                    <span class="font-semibold text-2xl">$10.99</span>
+                    <div class="cuotas bg-secondary py-1 px-2 leading-tight absolute ">
+                        <p class="text-primary text-2xl font-medium">24</p>
+                        <p class="text-sm">cuotas</p>
+                    </div>
+                </div>
+            </div> <!-- precio content -->
+            <p class="precio-final text-sm">Precio final $263.75</p>
+            <!-- <button
+                class="precio-oferta mt-5 py-3 px-5 uppercase border-primary border-solid border-2 text-lg font-medium">ver
+                precio oferta</button> -->
+
+            <mat-slide-toggle class="example-margin mt-5 py-3 px-5 uppercase" color="secondary-100" checked="false">
+                Ver precio oferta
+            </mat-slide-toggle>
+        </div> <!-- precio header -->
+    </div> <!-- prodcuto&precio -->
+
+
+    <div class="content mt-5">
+        <mat-tab-group color="primary">
+            <mat-tab label="Detalles">
+                <div class="mt-5">
+                    <p class="text-xl">Cajon gourmet</p>
+                    <p class="text-sm text-gray-600 m-5">Con la temperatura ideal para mantener fresca la carne por mas
+                        tiempo</p>
+                    <img class="mx-auto" width="300" src="assets/img/img-1.png" alt="img-1">
+                    <p class="text-xl m-5">Dispensador</p>
+                    <p class="text-sm text-gray-600 m-5">Colocado de manera estrategica en la puerta par atener agua
+                        fria en cualquier momento</p>
+                    <img class="mx-auto" width="300" src="assets/img/img-2.png" alt="img-2">
+                </div>
+            </mat-tab>
+            <mat-tab label="Ficha tecnica">
+                <div class="mt-5">
+                    <div class="mt-5">
+                        <table>
+                            <tr>
+                                <td class="titulo-table">Pies</td>
+                                <td class="contenido-table">14</td>
+                            </tr>
+                            <tr>
+                                <td class="titulo-table">Modelo</td>
+                                <td class="contenido-table">LT3RPP</td>
+                            </tr>
+                            <tr>
+                                <td class="titulo-table">Capacidad</td>
+                                <td class="contenido-table">394</td>
+                            </tr>
+                            <tr>
+                                <td class="titulo-table">Color</td>
+                                <td class="contenido-table">Silver</td>
+                            </tr>
+                            <tr>
+                                <td class="titulo-table">Gavetas</td>
+                                <td class="contenido-table">Si</td>
+                            </tr>
+                            <tr>
+                                <td class="titulo-table">Luz interna</td>
+                                <td class="contenido-table">Si</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div> <!-- detalle&ficha-tecnica -->
+</div> <!-- main class -->
