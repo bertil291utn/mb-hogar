@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductosComponent implements OnInit {
   producto;
+  valToogle = false;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -15,6 +16,10 @@ export class ProductosComponent implements OnInit {
       this.producto = params.name_prod
       //buscar en BD a cual pertenece ese codigo y deplegar el elemento
     });
+  }
+
+  onChangeSlideToggle(event) {
+    console.log('evento de toogle: ', event);
   }
 
   title = 'angularowlslider';

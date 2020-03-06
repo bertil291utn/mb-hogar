@@ -2,7 +2,7 @@
 <div class="text-primary">
     <mat-grid-list [cols]="breakpoint" rowHeight="350px" (window:resize)="onResize($event)">
         <mat-grid-tile *ngFor="let tile of tiles;let i = index" [colspan]="tile.cols" [rowspan]="tile.rows"
-            [style.background]="tile.color">
+            [style.background]="tile.color"  [routerLink]="['/c',tile.codigo]">
             <div style="text-align: center;">
                 <span [style.color]="tile.id==3?'white':''">
                     <p class="text-2xl md:text-lg">{{tile.text.description}}</p>

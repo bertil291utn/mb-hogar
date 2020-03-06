@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 
 export interface Card {
   title: string;
+  codigo:string;
   subtitle: string;
   text: string;
 }
@@ -13,61 +14,73 @@ export interface Card {
 const DATA: Card[] = [
   {
     title: 'Shiba Inu 1',
+    codigo: 'p-01-refrigeradora',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },
   {
     title: 'Shiba Inu 2',
+    codigo: 'p-02-congelador',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },
   {
     title: 'Shiba Inu 3',
+    codigo: 'p-03-celular',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },
   {
     title: 'Shiba Inu 4',
+    codigo: 'p-04-impresora',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },
   {
     title: 'Shiba Inu 5',
+    codigo: 'p-05-motocicleta',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },
   {
     title: 'Shiba Inu 6',
+    codigo: 'p-03-celular',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },
   {
     title: 'Shiba Inu 7',
+    codigo: 'p-04-impresora',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },
   {
     title: 'Shiba Inu 8',
+    codigo: 'p-05-motocicleta',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },
   {
     title: 'Shiba Inu 9',
+    codigo: 'p-01-refrigeradora',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },
   {
     title: 'Shiba Inu 10',
+    codigo: 'p-02-congelador',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },
   {
     title: 'Shiba Inu 11',
+    codigo: 'p-03-celular',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },
   {
     title: 'Shiba Inu 12',
+    codigo: 'p-04-impresora',
     subtitle: 'Dog Breed',
     text: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.'
   },

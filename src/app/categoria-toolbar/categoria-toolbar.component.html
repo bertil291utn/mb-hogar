@@ -87,7 +87,7 @@
       <div class="flex flex-wrap  justify-center">
         <!-- items-center justify-center CENTER FLEX
 align-items: center; justify-content: center; -->
-        <mat-card class="example-card m-1" *ngFor="let card of obs | async">
+        <mat-card [routerLink]="['/p',card.codigo]" class="example-card m-1" *ngFor="let card of obs | async">
           <div style="background-color: #F8F9FA; padding:16px;">
             <img mat-card-image class="main-image" style="margin-top: 0;"
               src="http://www.emporium.themeseason.com/assets/images/products/printer/1-medium.png"
