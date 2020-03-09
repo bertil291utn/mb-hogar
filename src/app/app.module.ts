@@ -19,6 +19,7 @@ import { MainHomeComponent } from './main-home/main-home.component';
 import { CategoriaToolbarComponent } from './categoria-toolbar/categoria-toolbar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductosComponent } from './productos/productos.component';
+import { EmpresaComponent } from './empresa/empresa.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ProductosComponent } from './productos/productos.component';
     MainHomeComponent,
     CategoriaToolbarComponent,
     PageNotFoundComponent,
-    ProductosComponent
+    ProductosComponent,
+    EmpresaComponent
   ],
   imports: [
     BrowserModule,

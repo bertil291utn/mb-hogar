@@ -4,6 +4,7 @@ import { MainHomeComponent } from './main-home/main-home.component';
 import { CategoriaToolbarComponent } from './categoria-toolbar/categoria-toolbar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductosComponent } from './productos/productos.component';
+import { EmpresaComponent } from './empresa/empresa.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: MainHomeComponent
+  },
+  {
+    path: 'empresa',
+    component: EmpresaComponent
   },
   {
     path: '', children: [
