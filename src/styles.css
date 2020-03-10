@@ -19,3 +19,34 @@ body {
   color: var(--primary-old-one);
   font-size: 16px;
 }
+
+/* sucursales */
+
+.mapboxgl-popup-content h3 {
+  background: #00FF01;
+  color: #084b90;
+  margin: 0;
+  display: block;
+  padding: 10px;
+  border-radius: 3px 3px 0 0;
+  font-weight: 700;
+  margin-top: -15px;
+}
+
+.mapboxgl-popup-content p {
+  margin: 0;
+  display: block;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.mapboxgl-popup-content {
+  padding: 0;
+  width: 180px;
+}
+
+.mapboxgl-popup-content-wrapper {
+  padding: 1%;
+}
+
+/* sucursales */

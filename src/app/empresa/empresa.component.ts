@@ -19,7 +19,7 @@ export class EmpresaComponent implements OnInit {
   quienesSomos = true;
   sucursales = false;
   map: mapboxgl.Map;
-
+  popup;
 
   constructor() { }
 
@@ -28,16 +28,51 @@ export class EmpresaComponent implements OnInit {
   }
 
 
-  initMap() {
+  private initMap() {
     mapboxgl.accessToken = this.accessToken1;
-    const map = new mapboxgl.Map({
+    this.map = new mapboxgl.Map({
       container: 'map_canvas',
-      style: 'mapbox://styles/mapbox/streets-v11'
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-78.1453246, 0.0402193],
+      zoom: 16
     });
-
+    this.addMarkers();
   }//end init map
 
-  arrowvalue() {
+
+  private addMarkers() {
+    //get from database locations and the imagen
+    let data_location = [
+      { sucursal: 'Sucursal 1', direccion: 'Restaracion y 10 de agosto', coords: { lng: -78.1452268, lat: 0.0395943 } },
+      { sucursal: 'Sucursal 2', direccion: 'Junin y restauracion', coords: { lng: -78.145392, lat: 0.040874 } }
+    ];
+
+    data_location.forEach((obj) => {
+      let imagen = document.createElement('img');
+      imagen.className = 'marker';
+      imagen.src = 'assets/logo_map.png';
+      imagen.style.width = '40px';
+      imagen.style.height = '40px';
+      // add marker temp to map
+      var oneMarker = new mapboxgl.Marker(imagen)
+        .setLngLat(obj.coords)
+        .addTo(this.map);
+      //bring directions and sucursal name
+
+
+      imagen.addEventListener('click', () => {
+        var popUps = document.getElementsByClassName('mapboxgl-popup');
+        if (popUps[0]) popUps[0].remove();
+
+        this.popup = new mapboxgl.Popup({ closeOnClick: false, closeButton: false })
+          .setLngLat(obj.coords)
+          .setHTML('<h3 class="title">' + obj.sucursal + '</h3><p>' + obj.direccion + '</p>')
+          .addTo(this.map);
+      });
+    });
+  }
+
+  public arrowvalue() {
     //when is click on tag label
     var categoriasNavbar =
       document.getElementById('empresa-navbar')['checked'];//get checkde value from checbox
@@ -51,7 +86,7 @@ export class EmpresaComponent implements OnInit {
     }
   }
 
-  linkInstitucional(tipo) {
+  public linkInstitucional(tipo) {
     var sucursales_list = document.getElementById('sucursales-list');
     var quienes_somos = document.getElementById('quienes-somos');
     var empresa_navbar = document.getElementById('empresa-navbar');
@@ -64,6 +99,7 @@ export class EmpresaComponent implements OnInit {
         sucursales_section.classList.add('hidden');//add hidden class to quienes somos section
         sucursales_list.classList.remove(color);
         quienes_somos.classList.add(color);
+        this.arrowvalue();
         break;
       case 'sucursales':
         sucursales_section.classList.remove('hidden');//remove hidden
@@ -72,6 +108,7 @@ export class EmpresaComponent implements OnInit {
         //remove and addcolors
         quienes_somos.classList.remove(color);
         sucursales_list.classList.add(color);
+        this.arrowvalue();
         break;
     }
     empresa_navbar['checked'] = false;
