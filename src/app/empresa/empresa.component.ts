@@ -43,8 +43,8 @@ export class EmpresaComponent implements OnInit {
   private addMarkers() {
     //get from database locations and the imagen
     let data_location = [
-      { sucursal: 'Sucursal 1', direccion: 'Restaracion y 10 de agosto', coords: { lng: -78.1452268, lat: 0.0395943 } },
-      { sucursal: 'Sucursal 2', direccion: 'Junin y restauracion', coords: { lng: -78.145392, lat: 0.040874 } }
+      { sucursal: 'Sucursal 1', direccion: 'Restaracion y 10 de agosto', fono: '0999999', coords: { lng: -78.1452268, lat: 0.0395943 } },
+      { sucursal: 'Sucursal 2', direccion: 'Junin y restauracion', fono: '02222', coords: { lng: -78.145392, lat: 0.040874 } }
     ];
 
     data_location.forEach((obj) => {
@@ -66,7 +66,7 @@ export class EmpresaComponent implements OnInit {
 
         this.popup = new mapboxgl.Popup({ closeOnClick: false, closeButton: false })
           .setLngLat(obj.coords)
-          .setHTML('<h3 class="title">' + obj.sucursal + '</h3><p>' + obj.direccion + '</p>')
+          .setHTML('<h3 class="title">' + obj.sucursal + '</h3><p class="py-1 px-3">' + obj.direccion + '</p>' + '<p class="text-gray-600 font-medium py-1 px-3">' + obj.fono + '</p>')
           .addTo(this.map);
       });
     });

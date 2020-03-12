@@ -3,71 +3,70 @@
         display: block;
     }
 </style>
-<div class="body py-5 bg-background">
+<div class="body py-5 bg-background ">
     <p class="mx-8 mt-5 text-primary text-xs">{{categoria_1}}{{subcatString}}</p>
+    <div class="slidebar-title p-5">
+        <p class="uppercase font-medium text-primary mb-2">institucional</p>
+        <hr>
+    </div>
 
-    <div class="slidebar mb-5">
-        <div class="slidebar-title p-5">
-            <p class="uppercase font-medium text-primary mb-2">institucional</p>
-            <hr>
-        </div>
+    <div class="contenedor lg:flex">
+        <div class="slidebar mb-5 lg:w-1/4 lg:mx-10 lg:border-r lg:border-gray-300">
+            <div class="menu">
+                <label for="empresa-navbar" class="pointer-cursor  block flex justify-between items-center w-full px-5"
+                    (click)="arrowvalue()">
+                    <h3 class="text-primary tracking-wider ">Institucional</h3>
+                    <div class="text-xs">
+                        <fa-icon *ngIf="arrowDown" class="text-primary flex justify-end" [icon]="faChevronDown">
+                        </fa-icon>
+                        <fa-icon *ngIf="arrowUp" class="text-primary" [icon]="faChevronUp">
+                        </fa-icon>
+                    </div>
+                </label>
+                <input class="hidden" type="checkbox" id="empresa-navbar" />
 
-        <div class="menu ">
-            <label for="empresa-navbar"
-                class="pointer-cursor lg:hidden block flex justify-between items-center w-full px-5"
-                (click)="arrowvalue()">
-                <h3 class="text-primary lg:hidden tracking-wider ">Institucional</h3>
-                <div class="text-xs">
-                    <fa-icon *ngIf="arrowDown" class="text-primary flex justify-end" [icon]="faChevronDown">
-                    </fa-icon>
-                    <fa-icon *ngIf="arrowUp" class="text-primary" [icon]="faChevronUp">
-                    </fa-icon>
-                </div>
-            </label>
-            <input class="hidden" type="checkbox" id="empresa-navbar" />
-
-            <div class="hidden" id="empresa-menu">
-                <!--  submenu -->
-                <nav>
-                    <ul class="lg:flex items-center justify-between text-sm text-primary pt-4 lg:pt-0">
+                <div class="hidden" id="empresa-menu">
+                    <!--  submenu -->
+                    <ul class="items-center justify-between text-sm text-primary pt-4">
                         <li class="bg-gray-300 pl-8" id="quienes-somos"><a
                                 class="lg:p-2 py-1 px-0 block border-b-2 border-transparent"
                                 (click)="linkInstitucional('quienes-somos')">Quienes somos?</a></li>
-                        <li class="pl-8" id="sucursales-list"><a class="lg:p-2 py-1 px-0 block border-b-2 border-transparent"
+                        <li class="pl-8" id="sucursales-list"><a
+                                class="lg:p-2 py-1 px-0 block border-b-2 border-transparent"
                                 (click)="linkInstitucional('sucursales')">Sucursales</a></li>
                     </ul>
-                </nav>
-            </div> <!-- submenu -->
-        </div>
-    </div> <!-- slidebar quines-somos & Sucursales -->
-
-    <div class="frame-content bg-gray-300">
-        <div class="quienes-somos-content px-8 py-5" *ngIf="quienesSomos">
-            <p class="uppercase font-medium text-primary text-sm mb-3">empresa</p>
-            <div class="bg-white p-5 text-primary text-xs">
-                <h3 class="uppercase font-medium text">misi&oacute;n</h3>
-                <p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, magni id! Facere
-                    perferendis,
-                    distinctio laudantium, accusantium recusandae quos deserunt corrupti nesciunt aperiam in
-                    repellendus. Animi delectus ea illo nulla sapiente!</p>
-                <h3 class="uppercase font-medium text">visi&oacute;n</h3>
-                <p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, magni id! Facere
-                    perferendis,
-                    distinctio laudantium, accusantium recusandae quos deserunt corrupti nesciunt aperiam in
-                    repellendus. Animi delectus ea illo nulla sapiente!</p>
-                <h3 class="uppercase font-medium text">valores</h3>
-                <p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, magni id! Facere
-                    perferendis,
-                    distinctio laudantium, accusantium recusandae quos deserunt corrupti nesciunt aperiam in
-                    repellendus. Animi delectus ea illo nulla sapiente!</p>
+                </div> <!-- submenu -->
             </div>
-        </div><!--  quienes somos -->
+        </div> <!-- slidebar quines-somos & Sucursales -->
 
-        <div class="mapa px-8 py-5 hidden" id="sucursales-section">
-            <p class="uppercase font-medium text-primary text-sm mb-3">Sucursales</p>
-            <div class="bg-white">
-                <div id='map_canvas'></div>
+        <div class="frame-content bg-gray-300 lg:w-3/4">
+            <div class="quienes-somos-content px-8 py-5" *ngIf="quienesSomos">
+                <p class="uppercase font-medium text-primary text-sm mb-3">empresa</p>
+                <div class="bg-white p-5 text-primary text-xs">
+                    <h3 class="uppercase font-medium text">misi&oacute;n</h3>
+                    <p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, magni id! Facere
+                        perferendis,
+                        distinctio laudantium, accusantium recusandae quos deserunt corrupti nesciunt aperiam in
+                        repellendus. Animi delectus ea illo nulla sapiente!</p>
+                    <h3 class="uppercase font-medium text">visi&oacute;n</h3>
+                    <p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, magni id! Facere
+                        perferendis,
+                        distinctio laudantium, accusantium recusandae quos deserunt corrupti nesciunt aperiam in
+                        repellendus. Animi delectus ea illo nulla sapiente!</p>
+                    <h3 class="uppercase font-medium text">valores</h3>
+                    <p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, magni id! Facere
+                        perferendis,
+                        distinctio laudantium, accusantium recusandae quos deserunt corrupti nesciunt aperiam in
+                        repellendus. Animi delectus ea illo nulla sapiente!</p>
+                </div>
+            </div><!--  quienes somos -->
+
+            <div class="mapa px-8 py-5 hidden" id="sucursales-section">
+                <p class="uppercase font-medium text-primary text-sm mb-3">Sucursales</p>
+                <div class="bg-white">
+                    <div id='map_canvas'></div>
+                </div>
             </div>
-        </div>
-    </div> <!-- frame-content -->
+        </div> <!-- frame-content -->
+    </div>
 </div>

@@ -22,6 +22,7 @@ body {
 
 /* sucursales */
 
+
 .mapboxgl-popup-content h3 {
   background: #00FF01;
   color: #084b90;
@@ -33,12 +34,6 @@ body {
   margin-top: -15px;
 }
 
-.mapboxgl-popup-content p {
-  margin: 0;
-  display: block;
-  padding: 10px;
-  font-weight: 400;
-}
 
 .mapboxgl-popup-content {
   padding: 0;
