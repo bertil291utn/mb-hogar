@@ -2,7 +2,7 @@
 
 > Web Page resposive para mostrar todos los productos de la empresa. 
 
-<!-- ![screenshot](assets/project-screenshot.png) -->
+![image](https://user-images.githubusercontent.com/24902525/76778252-7f232400-6777-11ea-9db7-d960ff71816a.png)
 
 Se mostrar&aacute;n todos los productos de la empresa posteriormente se a&ntilde;adira pasarela de pago para compras online
 
@@ -15,8 +15,8 @@ Se mostrar&aacute;n todos los productos de la empresa posteriormente se a&ntilde
 
 ## Live demo
 
-<!-- <a href="https://quizzical-gates-ccc83e.netlify.com" target="_blank">Check it out</a>💻 -->
-[![Netlify Status](https://api.netlify.com/api/v1/badges/db0e189a-c025-4b58-9dcc-28d1ea623c8e/deploy-status)](https://app.netlify.com/sites/trusting-carson-64e553/deploys)
+ <a href="http://muebleriahogar.netlify.com" target="_blank">Check it out</a>💻 
+
 
 ## Getting Started
 
