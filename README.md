@@ -1,4 +1,4 @@
-# Muebler&iacute;a Hogar Web Page Front End
+# Muebler&iacute;a Hogar Web Page
 
 > Web Page resposive para mostrar todos los productos de la empresa. 
 
@@ -34,3 +34,12 @@ ng serve
 - Twitter: [@btandayamo](https://twitter.com/batandayamo)
 - Linkedin: [Bertil Tandayamo](http://bit.ly/bertil_linkedin)
 
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
