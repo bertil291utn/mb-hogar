@@ -39,7 +39,7 @@ ng serve
 
 ## Show your support
 
-Hit the  ⭐️  button if you like this project!
+If you got until here, show your love hitting the ⭐️ button, I'd really appreciate it.
 
 ## Acknowledgments
 
