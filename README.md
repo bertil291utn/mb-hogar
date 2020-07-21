@@ -19,7 +19,7 @@
 
 ## Improvements
 
-It'll be shown all products and add gateway payments like Stripe or any local one
+- We will show all products and add gateway payments like Stripe or other local payment methods
 
 ## Getting Started
 
